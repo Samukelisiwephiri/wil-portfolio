@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samukelisiwe Felicity Phiri | 6-Month WIL Portfolio — Electrical Engineering &amp; Full-Stack IoT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            pactVoid: '#030816',
+            pactNavy: '#071229',
+            pactGlass: 'rgba(10, 22, 48, 0.68)',
+            pactGlassHover: 'rgba(15, 33, 70, 0.84)',
+            pactBorder: 'rgba(56, 189, 248, 0.18)',
+            pactCyan: '#38BDF8',
+            pactSky: '#0EA5E9',
+            pactSapphire: '#2563EB',
+            pactEmerald: '#10B981',
+            pactText: '#E2E8F0',
+            pactMuted: '#94A3B8',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          boxShadow: {
+            'pact-glow': '0 0 35px -8px rgba(14, 165, 233, 0.35)',
+            'pact-card': '0 20px 45px -18px rgba(2, 6, 23, 0.85)',
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* PACT Deep-Blue Animated Mesh / Aurora Background */
+    body {
+      background-color: #030816;
+      color: #E2E8F0;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .pact-glass {
+      background: rgba(10, 22, 48, 0.66);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+    }
+
+    .pact-glass-strong {
+      background: rgba(7, 17, 38, 0.86);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+
+    @keyframes orbFloatA {
+      0%, 100% { transform: translate(0px, 0px) scale(1); }
+      33% { transform: translate(45px, -35px) scale(1.08); }
+      66% { transform: translate(-30px, 25px) scale(0.95); }
+    }
+
+    @keyframes orbFloatB {
+      0%, 100% { transform: translate(0px, 0px) scale(1); }
+      50% { transform: translate(-55px, -40px) scale(1.12); }
+    }
+
+    @keyframes waveDrift {
+      0% { transform: translateX(0px); }
+      50% { transform: translateX(-28px); }
+      100% { transform: translateX(0px); }
+    }
+
+    .orb-a {
+      animation: orbFloatA 16s ease-in-out infinite;
+    }
+
+    .orb-b {
+      animation: orbFloatB 20s ease-in-out infinite;
+    }
+
+    .wave-drift {
+      animation: waveDrift 14s ease-in-out infinite;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #050D21;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(56, 189, 248, 0.28);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(56, 189, 248, 0.5);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-pactSky selection:text-white relative min-h-screen">
+
+  <!-- PACT Animated Deep-Blue Aurora Orbs & SVG Wave Grid Backdrop -->
+  <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none bg-pactVoid">
+    <!-- Glowing Cyan & Sapphire Radial Orbs -->
+    <div class="orb-a absolute -top-24 -left-24 w-[32rem] h-[32rem] rounded-full bg-pactSky/20 blur-[125px]"></div>
+    <div class="orb-b absolute top-1/3 -right-28 w-[36rem] h-[36rem] rounded-full bg-pactSapphire/25 blur-[135px]"></div>
+    <div class="orb-a absolute -bottom-32 left-1/4 w-[34rem] h-[34rem] rounded-full bg-cyan-400/15 blur-[130px]"></div>
+
+    <!-- Subtle Perspective Cyber Grid -->
+    <div
+      class="absolute inset-0 opacity-25"
+      style="background-size: 40px 40px; background-image: linear-gradient(to right, rgba(56, 189, 248, 0.08) 1px, transparent 1px), linear-gradient(to bottom, rgba(56, 189, 248, 0.08) 1px, transparent 1px);"
+    ></div>
+
+    <!-- Animated SVG Wave Grid Overlay -->
+    <svg class="wave-drift absolute inset-x-0 top-16 w-[115%] h-[720px] opacity-30" viewBox="0 0 1440 720" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M-60 220C240 120 520 320 840 210C1120 115 1300 240 1520 175" stroke="url(#pactWaveGrad1)" stroke-width="1.5" />
+      <path d="M-60 310C260 210 540 410 860 300C1140 205 1320 330 1520 265" stroke="url(#pactWaveGrad2)" stroke-width="1.2" />
+      <path d="M-60 400C280 300 560 500 880 390C1160 295 1340 420 1520 355" stroke="url(#pactWaveGrad1)" stroke-width="1" />
+      <defs>
+        <linearGradient id="pactWaveGrad1" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#38BDF8" stop-opacity="0" />
+          <stop offset="0.5" stop-color="#38BDF8" stop-opacity="0.7" />
+          <stop offset="1" stop-color="#2563EB" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="pactWaveGrad2" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#2563EB" stop-opacity="0" />
+          <stop offset="0.5" stop-color="#0EA5E9" stop-opacity="0.55" />
+          <stop offset="1" stop-color="#38BDF8" stop-opacity="0" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 z-40 pact-glass-strong border-b border-pactBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Brand Identity -->
+        <a href="#top" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-pactCyan to-pactSapphire text-pactVoid flex items-center justify-center font-display font-extrabold text-base shadow-pact-glow">
+            SP
+          </div>
+          <div>
+            <span class="font-display font-bold text-white text-base sm:text-lg tracking-tight block leading-none">
+              Samukelisiwe Phiri
+            </span>
+            <span class="text-xs text-pactCyan font-mono tracking-wide">
+              6-Month WIL &bull; Light Current &amp; Full-Stack IoT
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-pactMuted">
+          <a href="#about" class="hover:text-pactCyan transition-colors">WIL Profile</a>
+          <a href="#documents" class="hover:text-pactCyan transition-colors">CV &amp; WIL Letter</a>
+          <a href="#projects" class="hover:text-pactCyan transition-colors">Case Studies</a>
+          <a href="#stack" class="hover:text-pactCyan transition-colors">Tech Stack</a>
+          <a href="#achievements" class="hover:text-pactCyan transition-colors">Honours</a>
+          <a href="#contact" class="hover:text-pactCyan transition-colors">Recruiter Portal</a>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="flex items-center gap-2.5">
+          <button
+            onclick="openApiInspector()"
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl pact-glass hover:bg-pactGlassHover text-pactText text-xs sm:text-sm font-medium transition-all"
+            title="Inspect simulated Node.js/Express REST API & SQLite Database"
+          >
+            <span class="w-2 h-2 rounded-full bg-pactEmerald animate-pulse"></span>
+            <span class="font-mono text-xs hidden sm:inline">API / SQLite</span>
+            <span class="font-mono text-xs sm:hidden">DB</span>
+            <span id="nav-inquiry-badge" class="px-1.5 py-0.5 text-[11px] font-mono bg-pactSky/25 text-pactCyan border border-pactCyan/30 rounded-md">1</span>
+          </button>
+
+          <a
+            href="#contact"
+            class="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-pactSky to-pactSapphire hover:brightness-110 text-white text-sm font-semibold transition-all shadow-pact-glow"
+          >
+            <span>Offer 6-Mo WIL</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+
+          <button
+            id="mobile-menu-btn"
+            onclick="toggleMobileMenu()"
+            aria-label="Toggle Navigation"
+            class="lg:hidden p-2.5 rounded-xl pact-glass text-pactText hover:bg-pactGlassHover transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown -->
+      <div id="mobile-menu" class="hidden lg:hidden pb-4 pt-2 border-t border-pactBorder space-y-1">
+        <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-pactMuted hover:bg-pactNavy hover:text-white">WIL Profile (6 Months)</a>
+        <a href="#documents" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-pactCyan font-semibold hover:bg-pactNavy">Download CV &amp; WIL Letter</a>
+        <a href="#projects" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-pactMuted hover:bg-pactNavy hover:text-white">Engineering Case Studies</a>
+        <a href="#stack" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-pactMuted hover:bg-pactNavy hover:text-white">Technical Stack</a>
+        <a href="#achievements" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-pactMuted hover:bg-pactNavy hover:text-white">Honours &amp; Leadership</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-pactEmerald font-semibold hover:bg-pactNavy">WIL Recruiter Inquiry Portal</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-10 pb-16 sm:pt-14 sm:pb-24 border-b border-pactBorder/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- 6-Month WIL Availability Status Badge -->
+        <div class="inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-2xl pact-glass text-xs sm:text-sm font-medium mb-8 shadow-pact-card">
+          <span class="relative flex h-2.5 w-2.5">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pactEmerald opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-pactEmerald"></span>
+          </span>
+          <span class="font-mono font-semibold text-pactEmerald">AVAILABLE FOR 6-MONTH WIL PLACEMENT (2027 INTAKE)</span>
+          <span class="hidden sm:inline text-pactMuted">&bull;</span>
+          <span class="text-pactMuted">TUT Student No: <strong class="text-white font-mono">230572054</strong> &bull; Pretoria / Johannesburg</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <!-- Hero Left Column -->
+          <div class="lg:col-span-7 space-y-6">
+            <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-[3.2rem] text-white tracking-tight leading-[1.12]">
+              Engineering Embedded Hardware &amp; <span class="bg-gradient-to-r from-pactCyan via-pactSky to-blue-400 bg-clip-text text-transparent">Full-Stack IoT Systems.</span>
+            </h1>
+
+            <p class="text-base sm:text-lg text-pactMuted leading-relaxed max-w-2xl">
+              I am <strong class="text-white font-semibold">Samukelisiwe Felicity Phiri</strong>, a final-year National Diploma in Electrical Engineering (Light Current &amp; Embedded Systems) candidate at <strong class="text-white font-semibold">Tshwane University of Technology (TUT)</strong>. Having completed my S5 Design Project (DPE316D), I am seeking a <strong class="text-pactCyan font-semibold">6-month Work-Integrated Learning (WIL) placement</strong> in firmware, industrial automation/OT security, or full-stack cloud telemetry.
+            </p>
+
+            <!-- Credential Pills -->
+            <div class="flex flex-wrap gap-2.5 pt-1">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl pact-glass text-xs font-medium text-pactText">
+                <span class="w-2 h-2 rounded-full bg-pactCyan"></span>
+                6-Month WIL Required (P1 / P2)
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl pact-glass text-xs font-medium text-pactText">
+                <span class="w-2 h-2 rounded-full bg-pactEmerald"></span>
+                SAIEE Student Member
+              </span>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl pact-glass text-xs font-medium text-pactText">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                2x 1st Place National Hackathon Winner
+              </span>
+            </div>
+
+            <!-- Hero Action & Direct Document Download Buttons -->
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a
+                href="#projects"
+                class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-gradient-to-r from-pactSky to-pactSapphire hover:brightness-110 text-white font-semibold text-sm transition-all shadow-pact-glow"
+              >
+                <span>Explore Case Studies</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </a>
+
+              <button
+                onclick="openDocumentModal('cv')"
+                class="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl pact-glass hover:bg-pactGlassHover border border-pactCyan/35 text-pactCyan font-semibold text-sm transition-all"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <span>CV (Preview / Download)</span>
+              </button>
+
+              <button
+                onclick="openDocumentModal('wil-letter')"
+                class="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl pact-glass hover:bg-pactGlassHover border border-pactEmerald/35 text-pactEmerald font-semibold text-sm transition-all"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <span>6-Mo WIL Letter</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Live System Telemetry Dossier -->
+          <div class="lg:col-span-5">
+            <div class="pact-glass rounded-3xl p-6 sm:p-7 shadow-pact-card relative overflow-hidden">
+              <div class="flex items-center justify-between pb-4 mb-5 border-b border-pactBorder">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-rose-400/80"></span>
+                  <span class="w-3 h-3 rounded-full bg-amber-400/80"></span>
+                  <span class="w-3 h-3 rounded-full bg-pactEmerald"></span>
+                  <span class="ml-2 font-mono text-xs text-pactCyan">wil_6mo_dossier.json</span>
+                </div>
+                <button
+                  onclick="openApiInspector()"
+                  class="text-xs font-mono text-pactCyan hover:underline"
+                >
+                  Inspect API &rarr;
+                </button>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3.5 mb-5">
+                <div class="bg-pactVoid/65 rounded-2xl p-4 border border-pactBorder/70">
+                  <p class="text-xs font-mono text-pactMuted mb-1">WIL Duration</p>
+                  <p class="font-display font-bold text-xl text-white">6 Months</p>
+                  <p class="text-[11px] text-pactEmerald font-mono mt-0.5">2027 P1 / P2 Ready</p>
+                </div>
+                <div class="bg-pactVoid/65 rounded-2xl p-4 border border-pactBorder/70">
+                  <p class="text-xs font-mono text-pactMuted mb-1">Student No.</p>
+                  <p class="font-display font-bold text-xl text-pactCyan font-mono">230572054</p>
+                  <p class="text-[11px] text-pactMuted mt-0.5">TUT Electrical Eng.</p>
+                </div>
+                <div class="bg-pactVoid/65 rounded-2xl p-4 border border-pactBorder/70">
+                  <p class="text-xs font-mono text-pactMuted mb-1">Backend Stack</p>
+                  <p class="font-display font-bold text-lg text-white">Node + SQLite</p>
+                  <p class="text-[11px] text-pactMuted mt-0.5">Express &amp; REST APIs</p>
+                </div>
+                <div class="bg-pactVoid/65 rounded-2xl p-4 border border-pactBorder/70">
+                  <p class="text-xs font-mono text-pactMuted mb-1">Direct Contact</p>
+                  <p class="font-display font-bold text-sm text-white font-mono">072 027 9961</p>
+                  <p class="text-[11px] text-pactCyan truncate mt-0.5">samke.fphiri@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="bg-pactVoid/65 rounded-2xl p-4 border border-pactBorder/70 space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-mono uppercase tracking-wider text-pactCyan">6-Month WIL Focus Areas</span>
+                  <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-pactEmerald/15 text-pactEmerald">TUT DEE</span>
+                </div>
+                <ul class="space-y-1.5 text-xs sm:text-sm text-pactText">
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-pactCyan"></span>
+                    Embedded Firmware (C/C++), ESP32/ATmega &amp; PCB/Circuit Testing
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-pactEmerald"></span>
+                    Industrial Automation, RS485/PLC &amp; OT Security
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-pactSky"></span>
+                    Full-Stack IoT Telemetry &amp; Cloud Dashboards
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & 6-MONTH WIL READINESS -->
+    <section id="about" class="py-16 sm:py-20 border-b border-pactBorder/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-5 space-y-4">
+            <span class="text-xs font-mono uppercase tracking-widest text-pactCyan font-semibold">01 // 6-Month WIL Candidate Profile</span>
+            <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">
+              Ready to Contribute From Day One of a 6-Month Placement.
+            </h2>
+            <p class="text-sm sm:text-base text-pactMuted leading-relaxed">
+              Having completed my S5 Design Project (DPE316D) in Electrical Engineering (Light Current) at Tshwane University of Technology, I bring hands-on hardware debugging, microcontroller programming, industrial bus analysis, and full-stack Node.js/SQLite software engineering into a focused 6-month WIL term.
+            </p>
+          </div>
+
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="p-6 rounded-2xl pact-glass space-y-2.5">
+              <div class="w-10 h-10 rounded-xl bg-pactSky/20 border border-pactCyan/30 text-pactCyan flex items-center justify-center font-mono font-bold text-sm">
+                MCU
+              </div>
+              <h3 class="font-display font-bold text-base text-white">Embedded Hardware &amp; Field Buses</h3>
+              <p class="text-sm text-pactMuted leading-relaxed">
+                ATmega328P, ESP32-S3-Pico, MCP23017 I2C expanders, SN75176BP RS485 transceivers, DS1307 RTC, Proteus circuit simulation, and Wokwi hardware testing.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl pact-glass space-y-2.5">
+              <div class="w-10 h-10 rounded-xl bg-pactEmerald/20 border border-pactEmerald/30 text-pactEmerald flex items-center justify-center font-mono font-bold text-sm">
+                API
+              </div>
+              <h3 class="font-display font-bold text-base text-white">Full-Stack Telemetry &amp; Web Apps</h3>
+              <p class="text-sm text-pactMuted leading-relaxed">
+                Node.js, Express, SQLite / better-sqlite3, and modern JavaScript web interfaces deployed on Vercel for real-time monitoring and database persistence.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl pact-glass space-y-2.5">
+              <div class="w-10 h-10 rounded-xl bg-amber-400/15 border border-amber-400/30 text-amber-300 flex items-center justify-center font-mono font-bold text-sm">
+                OT
+              </div>
+              <h3 class="font-display font-bold text-base text-white">Industrial OT Cybersecurity</h3>
+              <p class="text-sm text-pactMuted leading-relaxed">
+                1st Place winner at HackSecure 2026 for Inkanini RS485, an intrusion detection and hardware relay isolation firewall for industrial serial control buses.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-2xl pact-glass space-y-2.5">
+              <div class="w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-400/30 text-blue-300 flex items-center justify-center font-mono font-bold text-sm">
+                WIL
+              </div>
+              <h3 class="font-display font-bold text-base text-white">6-Month Logbook &amp; Team Execution</h3>
+              <p class="text-sm text-pactMuted leading-relaxed">
+                Huawei ICT Academy Campus Ambassador at TUT, ALX Professional Foundations graduate, and disciplined engineering logbook contributor for 6-month WIL terms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED RECRUITER DOCUMENT VAULT (CV & 6-MONTH WIL LETTER) -->
+    <section id="documents" class="py-16 sm:py-20 border-b border-pactBorder/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl space-y-2 mb-10">
+          <span class="text-xs font-mono uppercase tracking-widest text-pactCyan font-semibold">02 // Recruiter Document Vault</span>
+          <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">
+            Curriculum Vitae &amp; 6-Month WIL Letter
+          </h2>
+          <p class="text-sm sm:text-base text-pactMuted">
+            Preview or download Samukelisiwe's complete Curriculum Vitae and TUT Department of Electrical Engineering (DEE) 6-month WIL confirmation document directly for your HR or engineering placement file.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Document Card 1: CV -->
+          <div class="pact-glass rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-pact-card">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-lg bg-pactSky/20 border border-pactCyan/30 text-pactCyan font-mono text-xs font-semibold">
+                  CURRICULUM VITAE
+                </span>
+                <span class="text-xs font-mono text-pactMuted">Updated • 6-Mo WIL</span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white">
+                Samukelisiwe Felicity Phiri — Engineering CV
+              </h3>
+              <p class="text-sm text-pactMuted leading-relaxed">
+                Covers TUT National Diploma in Electrical Engineering (Light Current &amp; Embedded Systems, Student No: 230572054), embedded &amp; full-stack skills, hackathon 1st-place awards, certifications, and direct contact details (072 027 9961 &bull; samke.fphiri@gmail.com).
+              </p>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-pactBorder flex flex-wrap gap-3">
+              <button
+                onclick="openDocumentModal('cv')"
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-pactNavy hover:bg-pactGlassHover border border-pactBorder text-white text-xs sm:text-sm font-semibold transition-all"
+              >
+                <span>Preview CV</span>
+              </button>
+              <button
+                onclick="downloadDocumentFile('cv')"
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-pactSky to-pactSapphire hover:brightness-110 text-white text-xs sm:text-sm font-semibold transition-all shadow-pact-glow"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                <span>Download CV (.html / Print PDF)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Document Card 2: 6-Month WIL Letter -->
+          <div class="pact-glass rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-pact-card">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <span class="px-3 py-1 rounded-lg bg-pactEmerald/15 border border-pactEmerald/30 text-pactEmerald font-mono text-xs font-semibold">
+                  TUT DEE WIL LETTER (6 MONTHS)
+                </span>
+                <span class="text-xs font-mono text-pactMuted">Student #230572054</span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-white">
+                6-Month Work-Integrated Learning (WIL) Placement Letter
+              </h3>
+              <p class="text-sm text-pactMuted leading-relaxed">
+                Official Work-Integrated Learning placement confirmation and readiness letter for Tshwane University of Technology (Department of Electrical Engineering), specifying the required <strong class="text-white">6-month WIL placement period</strong> and employer mentorship/logbook details.
+              </p>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-pactBorder flex flex-wrap gap-3">
+              <button
+                onclick="openDocumentModal('wil-letter')"
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-pactNavy hover:bg-pactGlassHover border border-pactBorder text-white text-xs sm:text-sm font-semibold transition-all"
+              >
+                <span>Preview WIL Letter</span>
+              </button>
+              <button
+                onclick="downloadDocumentFile('wil-letter')"
+                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-pactEmerald/20 hover:bg-pactEmerald/30 border border-pactEmerald/40 text-pactEmerald text-xs sm:text-sm font-semibold transition-all"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                <span>Download 6-Mo WIL Letter</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTERABLE ENGINEERING & FULL-STACK CASE STUDIES -->
+    <section id="projects" class="py-16 sm:py-24 border-b border-pactBorder/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div class="space-y-2">
+            <span class="text-xs font-mono uppercase tracking-widest text-pactCyan font-semibold">03 // Engineering Portfolio</span>
+            <h2 class="font-display font-bold text-2xl sm:text-4xl text-white">
+              Featured Systems &amp; Case Studies
+            </h2>
+            <p class="text-sm sm:text-base text-pactMuted max-w-2xl">
+              Served from the simulated SQLite <code class="font-mono text-xs bg-pactNavy px-1.5 py-0.5 rounded text-pactCyan border border-pactBorder">projects</code> table. Click any card to inspect architecture, schematics, and live deployments.
+            </p>
+          </div>
+
+          <div id="project-filters" class="flex flex-wrap gap-2" role="tablist" aria-label="Filter projects by category">
+            <button data-filter="All" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-gradient-to-r from-pactSky to-pactSapphire text-white transition-all shadow-pact-glow">
+              All Systems (6)
+            </button>
+            <button data-filter="Embedded & IoT" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium pact-glass text-pactMuted hover:text-white transition-all">
+              Embedded &amp; IoT
+            </button>
+            <button data-filter="Full-Stack Web" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium pact-glass text-pactMuted hover:text-white transition-all">
+              Full-Stack Web
+            </button>
+            <button data-filter="Industrial Cybersecurity" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium pact-glass text-pactMuted hover:text-white transition-all">
+              Industrial Cybersecurity
+            </button>
+          </div>
+        </div>
+
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7"></div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL STACK & LAB MATRIX -->
+    <section id="stack" class="py-16 sm:py-24 border-b border-pactBorder/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl space-y-2 mb-12">
+          <span class="text-xs font-mono uppercase tracking-widest text-pactCyan font-semibold">04 // Technical Capabilities</span>
+          <h2 class="font-display font-bold text-2xl sm:text-4xl text-white">
+            Technical Stack &amp; Engineering Lab Matrix
+          </h2>
+          <p class="text-sm sm:text-base text-pactMuted">
+            Validated across TUT laboratory practicals, S5 design prototyping, national hackathons, and cloud production deployments.
+          </p>
+        </div>
+
+        <div id="skills-matrix" class="grid grid-cols-1 lg:grid-cols-3 gap-7"></div>
+      </div>
+    </section>
+
+    <!-- COMPETITIONS, CERTIFICATIONS & LEADERSHIP -->
+    <section id="achievements" class="py-16 sm:py-24 border-b border-pactBorder/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Competitions -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="space-y-2">
+              <span class="text-xs font-mono uppercase tracking-widest text-pactCyan font-semibold">05 // Recognition &amp; Milestones</span>
+              <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">
+                Competitions &amp; Engineering Honours
+              </h2>
+            </div>
+
+            <div class="relative pl-6 border-l-2 border-pactBorder space-y-6">
+              <div class="relative">
+                <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-pactCyan border-4 border-pactVoid"></span>
+                <div class="pact-glass rounded-2xl p-5">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                    <span class="px-2.5 py-0.5 rounded-lg bg-pactCyan/15 text-pactCyan font-mono text-xs font-semibold">1st Place Winner &bull; 2026</span>
+                    <span class="text-xs font-mono text-pactMuted">Industrial OT Security</span>
+                  </div>
+                  <h3 class="font-display font-bold text-lg text-white">HackSecure 2026 National Cybersecurity Hackathon</h3>
+                  <p class="text-sm text-pactMuted mt-1.5 leading-relaxed">
+                    Awarded 1st Place for <strong class="text-white">Inkanini RS485</strong>, an ESP32-based industrial OT intrusion detection firewall with SN75176BP bus inspection and hardware watchdog relay isolation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="relative">
+                <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-pactEmerald border-4 border-pactVoid"></span>
+                <div class="pact-glass rounded-2xl p-5">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                    <span class="px-2.5 py-0.5 rounded-lg bg-pactEmerald/15 text-pactEmerald font-mono text-xs font-semibold">1st Place Winner</span>
+                    <span class="text-xs font-mono text-pactMuted">EdTech &amp; Social Impact</span>
+                  </div>
+                  <h3 class="font-display font-bold text-lg text-white">GirlCode Johannesburg Hackathon (Imbewu Learn)</h3>
+                  <p class="text-sm text-pactMuted mt-1.5 leading-relaxed">
+                    Won 1st Place in Johannesburg building <strong class="text-white">Imbewu Learn</strong>, an accessible learning platform engineered for high usability and low-bandwidth resilience.
+                  </p>
+                </div>
+              </div>
+
+              <div class="relative">
+                <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-pactSky border-4 border-pactVoid"></span>
+                <div class="pact-glass rounded-2xl p-5">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                    <span class="px-2.5 py-0.5 rounded-lg bg-pactSky/15 text-pactSky font-mono text-xs font-semibold">Incubated Venture &bull; 1st Place</span>
+                    <span class="text-xs font-mono text-pactMuted">Embedded FinTech</span>
+                  </div>
+                  <h3 class="font-display font-bold text-lg text-white">MKHAYA (formerly BloomLedger) Hardware POS</h3>
+                  <p class="text-sm text-pactMuted mt-1.5 leading-relaxed">
+                    Secured 1st Place and venture incubation for a pocket-sized Arduino Uno POS terminal paired with a full-stack analytics dashboard for women micro-merchants.
+                  </p>
+                </div>
+              </div>
+
+              <div class="relative">
+                <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-blue-400 border-4 border-pactVoid"></span>
+                <div class="pact-glass rounded-2xl p-5">
+                  <div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+                    <span class="px-2.5 py-0.5 rounded-lg bg-blue-400/15 text-blue-300 font-mono text-xs font-semibold">National Top 10 Finalist</span>
+                    <span class="text-xs font-mono text-pactMuted">AI &amp; Sustainability</span>
+                  </div>
+                  <h3 class="font-display font-bold text-lg text-white">TCS Sustainathon South Africa (Hlokomela AI)</h3>
+                  <p class="text-sm text-pactMuted mt-1.5 leading-relaxed">
+                    Ranked Top 10 nationally for <strong class="text-white">Hlokomela AI</strong>, applying predictive intelligence to community resource sustainability challenges.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications & Leadership -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="space-y-2">
+              <span class="text-xs font-mono uppercase tracking-widest text-pactEmerald font-semibold">06 // Credentials &amp; Leadership</span>
+              <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">
+                Certifications &amp; Campus Roles
+              </h2>
+            </div>
+
+            <div class="space-y-4">
+              <div class="p-5 rounded-2xl pact-glass flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-pactSky/20 border border-pactCyan/30 text-pactCyan flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                  HW
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-base text-white">Huawei ICT Academy Campus Ambassador</h3>
+                  <p class="text-xs text-pactMuted mt-1 leading-relaxed">
+                    Representing Tshwane University of Technology (TUT), mentoring peers across networking, cloud computing, and ICT certification tracks.
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-5 rounded-2xl pact-glass flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-pactEmerald/20 border border-pactEmerald/30 text-pactEmerald flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                  AI-900
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-base text-white">Microsoft Azure AI Fundamentals (AI-900)</h3>
+                  <p class="text-xs text-pactMuted mt-1 leading-relaxed">
+                    Certified foundational proficiency in machine learning concepts, cloud AI workloads, and responsible AI deployment.
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-5 rounded-2xl pact-glass flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-pactSky/20 border border-pactSky/30 text-pactSky flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                  SEC26
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-base text-white">SANCS26 Cyber Security School</h3>
+                  <p class="text-xs text-pactMuted mt-1 leading-relaxed">
+                    Selected participant in intensive network defense, protocol security, and critical infrastructure resilience training.
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-5 rounded-2xl pact-glass flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/20 border border-blue-400/30 text-blue-300 flex items-center justify-center shrink-0 font-mono font-bold text-xs">
+                  ALX
+                </div>
+                <div>
+                  <h3 class="font-display font-bold text-base text-white">ALX Professional Foundations</h3>
+                  <p class="text-xs text-pactMuted mt-1 leading-relaxed">
+                    Trained in structured engineering problem-solving, stakeholder communication, agile delivery, and workplace professionalism.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6-MONTH WIL RECRUITER INQUIRY PORTAL -->
+    <section id="contact" class="py-16 sm:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+
+          <!-- Left Info -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="space-y-2">
+              <span class="text-xs font-mono uppercase tracking-widest text-pactCyan font-semibold">07 // 6-Month WIL Recruiter Portal</span>
+              <h2 class="font-display font-bold text-2xl sm:text-4xl text-white">
+                Initiate a 6-Month WIL Placement
+              </h2>
+              <p class="text-sm sm:text-base text-pactMuted leading-relaxed">
+                Have a 6-month Work-Integrated Learning opportunity in Electrical Engineering (Light Current), Embedded Systems, Industrial Automation, or Full-Stack IoT? Submit your placement details below.
+              </p>
+            </div>
+
+            <div class="p-5 rounded-2xl pact-glass space-y-3">
+              <div class="flex items-center gap-2 text-xs font-mono text-pactEmerald font-semibold">
+                <span class="w-2 h-2 rounded-full bg-pactEmerald"></span>
+                <span>POST /api/inquiries &rarr; SQLite Persistence</span>
+              </div>
+              <p class="text-xs text-pactMuted leading-relaxed">
+                Submitting validates your payload and persists it into the simulated SQLite <code class="font-mono text-pactCyan">recruiter_inquiries</code> table in <code class="font-mono text-pactText">localStorage</code>.
+              </p>
+              <button
+                type="button"
+                onclick="openApiInspector('inquiries')"
+                class="inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-pactCyan hover:underline"
+              >
+                <span>Open SQLite recruiter_inquiries Table &rarr;</span>
+              </button>
+            </div>
+
+            <div class="space-y-3 text-sm text-pactText">
+              <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded-lg bg-pactNavy border border-pactBorder font-mono text-xs text-pactCyan">TEL</span>
+                <span class="font-mono">072 027 9961</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded-lg bg-pactNavy border border-pactBorder font-mono text-xs text-pactCyan">MAIL</span>
+                <a href="mailto:samke.fphiri@gmail.com" class="hover:text-pactCyan underline underline-offset-4">samke.fphiri@gmail.com</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="px-2.5 py-1 rounded-lg bg-pactNavy border border-pactBorder font-mono text-xs text-pactCyan">GH</span>
+                <a href="https://github.com/Samukelisiwephiri" target="_blank" rel="noopener noreferrer" class="hover:text-pactCyan underline underline-offset-4">github.com/Samukelisiwephiri</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Form -->
+          <div class="lg:col-span-7">
+            <form id="wil-inquiry-form" class="pact-glass rounded-3xl p-6 sm:p-8 shadow-pact-card space-y-5" novalidate>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="companyName" class="block text-xs font-mono uppercase tracking-wider text-pactCyan mb-2">Company / Organization *</label>
+                  <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                    required
+                    placeholder="e.g., Eskom, Siemens, Denel, IoT Lab"
+                    class="w-full px-4 py-3 rounded-xl bg-pactVoid/75 border border-pactBorder text-white placeholder-pactMuted/50 text-sm focus:outline-none focus:ring-2 focus:ring-pactCyan transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label for="roleTrack" class="block text-xs font-mono uppercase tracking-wider text-pactCyan mb-2">6-Month WIL Role Track *</label>
+                  <select
+                    id="roleTrack"
+                    name="roleTrack"
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-pactVoid/75 border border-pactBorder text-white text-sm focus:outline-none focus:ring-2 focus:ring-pactCyan transition-all"
+                  >
+                    <option value="Embedded Systems & Firmware (6-Month WIL)">Embedded Systems &amp; Firmware (6-Month WIL)</option>
+                    <option value="IoT & Full-Stack Engineering (6-Month WIL)">IoT &amp; Full-Stack Software Engineering (6-Month WIL)</option>
+                    <option value="Control Systems & Industrial Automation (6-Month WIL)">Control Systems &amp; Industrial Automation (6-Month WIL)</option>
+                    <option value="OT Cybersecurity & Telemetry (6-Month WIL)">OT Cybersecurity &amp; Network Telemetry (6-Month WIL)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="location" class="block text-xs font-mono uppercase tracking-wider text-pactCyan mb-2">Placement Location *</label>
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    required
+                    placeholder="e.g., Pretoria, Midrand, Johannesburg, Hybrid"
+                    class="w-full px-4 py-3 rounded-xl bg-pactVoid/75 border border-pactBorder text-white placeholder-pactMuted/50 text-sm focus:outline-none focus:ring-2 focus:ring-pactCyan transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label for="recruiterEmail" class="block text-xs font-mono uppercase tracking-wider text-pactCyan mb-2">Recruiter / Mentor Email *</label>
+                  <input
+                    type="email"
+                    id="recruiterEmail"
+                    name="recruiterEmail"
+                    required
+                    placeholder="talent@company.co.za"
+                    class="w-full px-4 py-3 rounded-xl bg-pactVoid/75 border border-pactBorder text-white placeholder-pactMuted/50 text-sm focus:outline-none focus:ring-2 focus:ring-pactCyan transition-all"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-mono uppercase tracking-wider text-pactCyan mb-2">6-Month Placement Details / Interview Invitation *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Share details regarding your 6-month WIL start window, engineering team focus, or interview availability..."
+                  class="w-full px-4 py-3 rounded-xl bg-pactVoid/75 border border-pactBorder text-white placeholder-pactMuted/50 text-sm focus:outline-none focus:ring-2 focus:ring-pactCyan transition-all"
+                ></textarea>
+              </div>
+
+              <div id="form-error-box" class="hidden p-3.5 rounded-xl bg-rose-950/70 border border-rose-500/40 text-rose-200 text-xs font-medium"></div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
+                <span class="text-xs text-pactMuted font-mono">Endpoint: POST /api/inquiries (HTTP 201)</span>
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-pactSky to-pactSapphire hover:brightness-110 text-white font-semibold text-sm transition-all shadow-pact-glow"
+                >
+                  <span>Submit 6-Month WIL Inquiry</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="pact-glass-strong border-t border-pactBorder py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="text-center sm:text-left">
+        <p class="font-display font-bold text-lg text-white">Samukelisiwe Felicity Phiri</p>
+        <p class="text-xs text-pactMuted font-mono mt-1">
+          TUT Student No: 230572054 &bull; 6-Month WIL (Light Current &amp; Full-Stack IoT) &bull; 072 027 9961 &bull; samke.fphiri@gmail.com
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-3 text-xs">
+        <button onclick="openDocumentModal('cv')" class="px-3.5 py-2 rounded-xl pact-glass hover:bg-pactGlassHover text-pactCyan font-semibold transition-colors">
+          Preview / Download CV
+        </button>
+        <button onclick="openDocumentModal('wil-letter')" class="px-3.5 py-2 rounded-xl pact-glass hover:bg-pactGlassHover text-pactEmerald font-semibold transition-colors">
+          Preview / Download WIL Letter
+        </button>
+        <button onclick="openApiInspector()" class="px-3.5 py-2 rounded-xl pact-glass hover:bg-pactGlassHover text-pactText font-mono transition-colors">
+          SQLite &amp; API Inspector
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 1: CASE STUDY DETAIL MODAL                                      -->
+  <!-- ===================================================================== -->
+  <div id="case-study-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-pactVoid/80 backdrop-blur-md" role="dialog" aria-modal="true">
+    <div class="pact-glass-strong rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-pact-card">
+      <div class="sticky top-0 z-10 pact-glass-strong px-6 py-4 border-b border-pactBorder flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <span id="modal-project-category" class="px-2.5 py-1 rounded-lg bg-pactSky/20 text-pactCyan font-mono text-xs font-semibold">Category</span>
+          <span id="modal-project-badge" class="hidden px-2.5 py-1 rounded-lg bg-pactEmerald/15 text-pactEmerald font-mono text-xs font-semibold">Badge</span>
+        </div>
+        <button onclick="closeCaseStudyModal()" class="p-2 rounded-xl pact-glass hover:bg-pactGlassHover text-white" aria-label="Close modal">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="p-6 sm:p-8 space-y-6">
+        <div>
+          <h3 id="modal-project-title" class="font-display font-bold text-2xl sm:text-3xl text-white">Project Title</h3>
+          <p id="modal-project-subtitle" class="text-sm text-pactCyan font-mono mt-1">Subtitle</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 rounded-2xl bg-pactVoid/65 border border-pactBorder">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-pactCyan font-semibold mb-1.5">01. Problem Statement</h4>
+            <p id="modal-project-problem" class="text-sm text-pactText leading-relaxed"></p>
+          </div>
+          <div class="p-4 rounded-2xl bg-pactVoid/65 border border-pactBorder">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-pactEmerald font-semibold mb-1.5">02. System Architecture</h4>
+            <p id="modal-project-architecture" class="text-sm text-pactText leading-relaxed"></p>
+          </div>
+          <div class="p-4 rounded-2xl bg-pactVoid/65 border border-pactBorder">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-amber-300 font-semibold mb-1.5">03. Technical Challenge</h4>
+            <p id="modal-project-challenge" class="text-sm text-pactText leading-relaxed"></p>
+          </div>
+          <div class="p-4 rounded-2xl bg-pactVoid/65 border border-pactBorder">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-pactSky font-semibold mb-1.5">04. Engineering Outcome</h4>
+            <p id="modal-project-outcome" class="text-sm text-pactText leading-relaxed"></p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-pactMuted font-semibold mb-2.5">Hardware, Firmware &amp; Software Stack</h4>
+          <div id="modal-project-stack" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div class="pt-4 border-t border-pactBorder flex flex-wrap items-center justify-between gap-3">
+          <div class="flex flex-wrap gap-3">
+            <a id="modal-project-live" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-pactSky to-pactSapphire text-white text-sm font-semibold">
+              <span>Launch Live Deployment</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+            <a id="modal-project-github" href="https://github.com/Samukelisiwephiri" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl pact-glass hover:bg-pactGlassHover text-white text-sm font-semibold">
+              <span>View GitHub Source</span>
+            </a>
+          </div>
+          <button onclick="closeCaseStudyModal()" class="text-xs font-mono text-pactMuted hover:text-white px-3 py-2">Close Window</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: CV & 6-MONTH WIL LETTER PREVIEW & DOWNLOAD MODAL            -->
+  <!-- ===================================================================== -->
+  <div id="document-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-pactVoid/80 backdrop-blur-md" role="dialog" aria-modal="true">
+    <div class="pact-glass-strong rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-pact-card">
+      <div class="sticky top-0 z-10 pact-glass-strong px-6 py-4 border-b border-pactBorder flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <button id="doc-tab-cv" onclick="switchDocumentTab('cv')" class="px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-pactSky to-pactSapphire text-white">
+            Curriculum Vitae (CV)
+          </button>
+          <button id="doc-tab-wil" onclick="switchDocumentTab('wil-letter')" class="px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium pact-glass text-pactMuted hover:text-white">
+            6-Month WIL Letter
+          </button>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="doc-download-btn" onclick="downloadDocumentFile(activeDocTab)" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-pactEmerald/20 hover:bg-pactEmerald/30 border border-pactEmerald/40 text-pactEmerald font-mono text-xs font-semibold">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download</span>
+          </button>
+          <button onclick="closeDocumentModal()" class="p-2 rounded-xl pact-glass hover:bg-pactGlassHover text-white" aria-label="Close Document Modal">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable / Previewable Document Sheet -->
+      <div class="p-6 sm:p-8">
+        <div id="document-preview-sheet" class="bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-xl space-y-5 text-sm leading-relaxed">
+          <!-- Populated dynamically by switchDocumentTab() -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 3: SIMULATED NODE.JS + EXPRESS + SQLITE INSPECTOR              -->
+  <!-- ===================================================================== -->
+  <div id="api-inspector-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-pactVoid/80 backdrop-blur-md" role="dialog" aria-modal="true">
+    <div class="pact-glass-strong rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-pact-card">
+      <div class="sticky top-0 z-10 pact-glass-strong px-6 py-4 border-b border-pactBorder flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span class="w-2.5 h-2.5 rounded-full bg-pactEmerald animate-pulse"></span>
+          <div>
+            <h3 class="font-mono font-bold text-sm sm:text-base text-white">Node.js + Express + SQLite3 Inspector</h3>
+            <p class="text-[11px] text-pactCyan font-mono">6-Month WIL Full-Stack Persistence Layer</p>
+          </div>
+        </div>
+        <button onclick="closeApiInspector()" class="p-2 rounded-xl pact-glass hover:bg-pactGlassHover text-white" aria-label="Close Inspector">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="p-6 space-y-6">
+        <div class="flex flex-wrap gap-2 border-b border-pactBorder pb-3">
+          <button onclick="switchInspectorTab('endpoints')" id="tab-btn-endpoints" class="inspector-tab-btn px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-pactSky to-pactSapphire text-white">
+            REST Endpoints Tester
+          </button>
+          <button onclick="switchInspectorTab('inquiries')" id="tab-btn-inquiries" class="inspector-tab-btn px-4 py-2 rounded-xl text-xs font-mono font-medium pact-glass text-pactMuted hover:text-white">
+            SQLite: recruiter_inquiries
+          </button>
+          <button onclick="switchInspectorTab('schema')" id="tab-btn-schema" class="inspector-tab-btn px-4 py-2 rounded-xl text-xs font-mono font-medium pact-glass text-pactMuted hover:text-white">
+            SQLite DDL Schema
+          </button>
+        </div>
+
+        <div id="inspector-tab-endpoints" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <button onclick="testRestEndpoint('GET', '/api/projects')" class="p-3.5 rounded-2xl pact-glass hover:bg-pactGlassHover text-left transition-all">
+              <span class="px-2 py-0.5 rounded bg-pactEmerald/20 text-pactEmerald font-mono text-[11px] font-bold">GET</span>
+              <p class="font-mono text-xs font-semibold text-white mt-1.5">/api/projects</p>
+              <p class="text-[11px] text-pactMuted mt-0.5">Fetch all engineering systems</p>
+            </button>
+
+            <button onclick="testRestEndpoint('GET', '/api/skills')" class="p-3.5 rounded-2xl pact-glass hover:bg-pactGlassHover text-left transition-all">
+              <span class="px-2 py-0.5 rounded bg-pactEmerald/20 text-pactEmerald font-mono text-[11px] font-bold">GET</span>
+              <p class="font-mono text-xs font-semibold text-white mt-1.5">/api/skills</p>
+              <p class="text-[11px] text-pactMuted mt-0.5">Fetch lab &amp; stack matrix</p>
+            </button>
+
+            <button onclick="testRestEndpoint('GET', '/api/inquiries')" class="p-3.5 rounded-2xl pact-glass hover:bg-pactGlassHover text-left transition-all">
+              <span class="px-2 py-0.5 rounded bg-pactSky/20 text-pactCyan font-mono text-[11px] font-bold">GET</span>
+              <p class="font-mono text-xs font-semibold text-white mt-1.5">/api/inquiries</p>
+              <p class="text-[11px] text-pactMuted mt-0.5">Read stored 6-mo WIL inquiries</p>
+            </button>
+          </div>
+
+          <div class="bg-pactVoid/90 border border-pactBorder text-cyan-100 rounded-2xl p-4 font-mono text-xs overflow-x-auto">
+            <div class="flex items-center justify-between pb-2 mb-2 border-b border-pactBorder text-[11px] text-pactCyan">
+              <span id="api-response-meta">HTTP/1.1 200 OK &bull; Content-Type: application/json</span>
+              <button onclick="copyApiOutput()" class="px-2 py-0.5 rounded bg-pactSky/20 hover:bg-pactSky/30 text-white">Copy JSON</button>
+            </div>
+            <pre id="api-response-output" class="leading-relaxed max-h-72 overflow-y-auto"></pre>
+          </div>
+        </div>
+
+        <div id="inspector-tab-inquiries" class="hidden space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <p class="text-xs sm:text-sm text-pactMuted">
+              Rows persisted in <code class="font-mono text-pactCyan bg-pactNavy px-1.5 py-0.5 rounded">recruiter_inquiries</code>.
+            </p>
+            <button onclick="seedSampleInquiry()" class="px-3 py-1.5 rounded-xl pact-glass hover:bg-pactGlassHover text-pactCyan font-mono text-xs font-medium">
+              + Insert Sample 6-Mo WIL Lead
+            </button>
+          </div>
+          <div id="sqlite-inquiries-list" class="space-y-3"></div>
+        </div>
+
+        <div id="inspector-tab-schema" class="hidden">
+          <pre class="bg-pactVoid/90 border border-pactBorder text-cyan-100 rounded-2xl p-4 font-mono text-xs leading-relaxed overflow-x-auto">CREATE TABLE projects (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  slug TEXT UNIQUE NOT NULL,
+  title TEXT NOT NULL,
+  category TEXT NOT NULL,
+  award_badge TEXT,
+  live_url TEXT,
+  github_url TEXT,
+  stack_json TEXT NOT NULL
+);
+
+CREATE TABLE recruiter_inquiries (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  company_name TEXT NOT NULL,
+  role_track TEXT NOT NULL,
+  wil_duration_months INTEGER DEFAULT 6,
+  location TEXT NOT NULL,
+  recruiter_email TEXT NOT NULL,
+  message TEXT NOT NULL,
+  status TEXT DEFAULT 'NEW_6MO_WIL_LEAD',
+  submitted_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container" class="fixed bottom-5 right-5 z-50 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <script>
+    const DB_STORAGE_KEY = 'sfp_pact_wil_6mo_db_v1';
+    let activeDocTab = 'cv';
+
+    const INITIAL_SEED_DATA = {
+      projects: [
+        {
+          id: 1,
+          slug: 'dpe316d-water-controller',
+          title: 'DPE316D Automated Water Tank Level & Pump Controller',
+          subtitle: 'TUT S5 Capstone Design Project — Embedded Control & Cloud Telemetry',
+          category: 'Embedded & IoT',
+          awardBadge: 'TUT S5 Design Project',
+          summary: 'Closed-loop embedded water level controller pairing an ATmega328P and MCP23017 I2C expander with an ESP32-S3-Pico gateway for live pump & tank telemetry.',
+          problem: 'Water interruptions and manual monitoring cause dry-run pump damage, tank overflows, and lack of operational telemetry.',
+          architecture: 'ATmega328P reads ultrasonic level sensors and drives relay actuators through an MCP23017 I2C expander while an ESP32-S3-Pico publishes real-time state to a Vercel dashboard.',
+          challenge: 'Filtering ultrasonic echo noise during refill turbulence and coordinating deterministic I2C polling with asynchronous Wi-Fi telemetry.',
+          outcome: 'Delivered a fault-tolerant automated pump controller with dry-run protection and live remote level monitoring.',
+          stack: ['ATmega328P', 'ESP32-S3-Pico', 'MCP23017 (I2C)', 'Ultrasonic Sensor', 'C/C++', 'Vercel Telemetry'],
+          liveUrl: 'https://dpe-316-d-water-dashboard-u1d6.vercel.app',
+          githubUrl: 'https://github.com/Samukelisiwephiri'
+        },
+        {
+          id: 2,
+          slug: 'inkanini-rs485-firewall',
+          title: 'Inkanini RS485 Industrial OT Intrusion Detection Firewall',
+          subtitle: 'Hardware-Enforced Fieldbus Packet Inspection & Watchdog Isolation',
+          category: 'Industrial Cybersecurity',
+          awardBadge: '1st Place HackSecure 2026',
+          summary: 'Real-time Operational Technology (OT) security appliance inspecting RS485 serial bus frames and isolating compromised PLC nodes via hardware relay cutoffs.',
+          problem: 'Legacy RS485 industrial buses lack native cryptographic authentication, leaving critical control actuators exposed to unauthorized frames.',
+          architecture: 'ESP32 Wokwi hardware model paired with SN75176BP RS485 transceivers monitors bus traffic and actuates a hardware watchdog relay with live SOC dashboard alerts.',
+          challenge: 'Detecting anomalous frame patterns on half-duplex RS485 lines without disrupting legitimate PLC polling timing.',
+          outcome: 'Won 1st Place at HackSecure 2026 with live physical bus isolation and incident telemetry.',
+          stack: ['ESP32', 'SN75176BP RS485', 'Wokwi Simulation', 'Watchdog Relay', 'Embedded C++', 'Vercel Dashboard'],
+          liveUrl: 'https://inkanini-rs485.vercel.app',
+          githubUrl: 'https://github.com/Samukelisiwephiri'
+        },
+        {
+          id: 3,
+          slug: 'mkhaya-smart-pos',
+          title: 'MKHAYA (formerly BloomLedger) Smart POS & Analytics',
+          subtitle: 'Pocket-Sized Arduino Hardware Terminal + Full-Stack Business Intelligence',
+          category: 'Embedded & IoT',
+          awardBadge: '1st Place & Incubated Venture',
+          summary: 'Low-cost Arduino Uno point-of-sale terminal paired with a full-stack analytics web application helping women micro-merchants track sales and build credit histories.',
+          problem: 'Informal women merchants often rely on manual ledgers, limiting visibility into daily cashflow and business growth.',
+          architecture: 'Pocket-sized Arduino Uno hardware POS captures transactions and syncs structured data to a full-stack analytics dashboard.',
+          challenge: 'Keeping hardware BOM costs minimal while creating an intuitive merchant workflow.',
+          outcome: 'Earned 1st Place hackathon recognition and entered venture incubation.',
+          stack: ['Arduino Uno', 'Embedded C++', 'Full-Stack Web', 'Node.js', 'REST API', 'Hardware Prototyping'],
+          liveUrl: 'https://github.com/Samukelisiwephiri',
+          githubUrl: 'https://github.com/Samukelisiwephiri'
+        },
+        {
+          id: 4,
+          slug: 'geekarchieve-platform',
+          title: 'GeekArchieve — SMME & Youth Engineering Launchpad',
+          subtitle: 'Full-Stack Marketplace Connecting SMMEs/NGOs with Multidisciplinary Youth Pods',
+          category: 'Full-Stack Web',
+          awardBadge: 'Live Production App',
+          summary: 'Full-stack web application enabling South African SMMEs and NGOs to commission scoped digital and technical work from vetted youth pods.',
+          problem: 'Small organizations need affordable technical delivery while emerging engineers need structured real-world deliverables.',
+          architecture: 'HTML5, CSS3, and JavaScript frontend backed by a Node.js + Express server and SQLite database hosted on Vercel.',
+          challenge: 'Designing clean relational SQLite tables for pod matching, deliverables, and portfolio tracking.',
+          outcome: 'Deployed live at geek-archieve.vercel.app with end-to-end CRUD workflows.',
+          stack: ['Node.js', 'Express', 'SQLite', 'JavaScript (ES6+)', 'HTML5/CSS3', 'Vercel'],
+          liveUrl: 'https://geek-archieve.vercel.app',
+          githubUrl: 'https://github.com/Samukelisiwephiri'
+        },
+        {
+          id: 5,
+          slug: 'aegis-fintech-platform',
+          title: 'Aegis — Full-Stack AI & FinTech Risk Platform',
+          subtitle: 'High-Throughput Node.js, Express & better-sqlite3 Web Application',
+          category: 'Full-Stack Web',
+          awardBadge: 'Live Production App',
+          summary: 'Full-stack AI-assisted FinTech application built for reliable transaction handling, fast synchronous SQLite queries, and financial risk insights.',
+          problem: 'Financial web tools require fast, consistent persistence and clear REST API contracts.',
+          architecture: 'Node.js and Express REST backend using better-sqlite3 for fast, reliable database operations.',
+          challenge: 'Structuring clean API endpoints and consistent error handling across financial workflows.',
+          outcome: 'Deployed live at aegis-jjru.vercel.app.',
+          stack: ['Node.js', 'Express', 'better-sqlite3', 'REST API', 'JavaScript', 'Vercel'],
+          liveUrl: 'https://aegis-jjru.vercel.app',
+          githubUrl: 'https://github.com/Samukelisiwephiri'
+        },
+        {
+          id: 6,
+          slug: 'clearcommunity-water-node',
+          title: 'ClearCommunity — Decentralized Water Quality Vigilance Node',
+          subtitle: 'Multi-Sensor ATmega Environmental Telemetry & RS485 Field Node',
+          category: 'Embedded & IoT',
+          awardBadge: 'Embedded Hardware Node',
+          summary: 'Microcontroller water quality monitoring node measuring temperature and turbidity with timestamped local LCD readout and RS485 telemetry.',
+          problem: 'Communities need early visibility into water temperature and turbidity shifts before contamination escalates.',
+          architecture: 'ATmega microcontroller reads LM35 temperature and LDR turbidity sensors, timestamps via DS1307 RTC over I2C, displays on an I2C 16x2 LCD, and outputs via RS485.',
+          challenge: 'Stabilizing analog turbidity thresholds and sharing the I2C bus between RTC and LCD peripherals.',
+          outcome: 'Validated a modular sensor-to-RS485 field node architecture.',
+          stack: ['ATmega MCU', 'LM35 Sensor', 'LDR Turbidity', 'DS1307 RTC (I2C)', 'RS485 Transceiver', 'I2C 16x2 LCD'],
+          liveUrl: 'https://github.com/Samukelisiwephiri',
+          githubUrl: 'https://github.com/Samukelisiwephiri'
+        }
+      ],
+      skills: [
+        {
+          category: 'Embedded Firmware & Hardware',
+          badge: 'MCU',
+          description: 'Microcontroller firmware, industrial fieldbuses, and circuit/HIL simulation.',
+          items: [
+            { name: 'C / C++ (Embedded)', level: 'Core Strength' },
+            { name: 'ATmega328P & AVR Architecture', level: 'Hardware & Bare-Metal' },
+            { name: 'ESP32 / ESP32-S3-Pico', level: 'IoT & Telemetry' },
+            { name: 'RS485 (SN75176BP) & I2C / SPI', level: 'Industrial Protocols' },
+            { name: 'MCP23017 & DS1307 RTC', level: 'Peripheral Interfacing' },
+            { name: 'Microchip Studio & PlatformIO', level: 'Firmware Tooling' },
+            { name: 'Proteus & Wokwi', level: 'Circuit & HIL Simulation' }
+          ]
+        },
+        {
+          category: 'Full-Stack Web & Cloud',
+          badge: 'API',
+          description: 'RESTful backend APIs, relational SQLite databases, and responsive web UIs.',
+          items: [
+            { name: 'Node.js & Express.js', level: 'REST APIs' },
+            { name: 'SQLite & better-sqlite3', level: 'Relational DB' },
+            { name: 'JavaScript (ES6+)', level: 'Frontend & Logic' },
+            { name: 'HTML5 & CSS3 / Tailwind', level: 'Responsive UI' },
+            { name: 'Git & GitHub', level: 'Version Control' },
+            { name: 'Vercel Cloud Deployment', level: 'Live Hosting' }
+          ]
+        },
+        {
+          category: 'Engineering & Design Tools',
+          badge: 'CAD',
+          description: 'System modeling, CAD design, and technical engineering documentation.',
+          items: [
+            { name: 'MATLAB & Simulink', level: 'Simulation & Analysis' },
+            { name: 'SolidWorks', level: '3D CAD Design' },
+            { name: 'Figma', level: 'UI/UX Prototyping' },
+            { name: 'WIL Engineering Logbooks', level: '6-Month Placement Ready' }
+          ]
+        }
+      ],
+      recruiter_inquiries: [
+        {
+          id: 101,
+          company_name: 'Gauteng Industrial Automation Systems (Sample)',
+          role_track: 'Embedded Systems & Firmware (6-Month WIL)',
+          wil_duration_months: 6,
+          location: 'Pretoria, Gauteng',
+          recruiter_email: 'engineering.wil@example.co.za',
+          message: 'Reviewing Samukelisiwe (Student #230572054) for our upcoming 6-month Electrical Engineering (Light Current) WIL placement.',
+          status: 'VERIFIED_6MO_SAMPLE',
+          submitted_at: '2026-11-23 09:00:00'
+        }
+      ]
+    };
+
+    const BackendAPI = {
+      init() {
+        try {
+          if (!localStorage.getItem(DB_STORAGE_KEY)) {
+            localStorage.setItem(DB_STORAGE_KEY, JSON.stringify(INITIAL_SEED_DATA));
+          }
+        } catch (err) {
+          console.warn('Storage fallback:', err);
+        }
+      },
+      readDB() {
+        try {
+          const raw = localStorage.getItem(DB_STORAGE_KEY);
+          return raw ? JSON.parse(raw) : JSON.parse(JSON.stringify(INITIAL_SEED_DATA));
+        } catch (err) {
+          return JSON.parse(JSON.stringify(INITIAL_SEED_DATA));
+        }
+      },
+      writeDB(data) {
+        try {
+          localStorage.setItem(DB_STORAGE_KEY, JSON.stringify(data));
+        } catch (err) {
+          console.warn('Storage write error:', err);
+        }
+      },
+      getProjects(category = 'All') {
+        const db = this.readDB();
+        const rows = category === 'All' ? db.projects : db.projects.filter(p => p.category === category);
+        return { status: 200, endpoint: `GET /api/projects${category !== 'All' ? `?category=${encodeURIComponent(category)}` : ''}`, count: rows.length, data: rows };
+      },
+      getSkills() {
+        const db = this.readDB();
+        return { status: 200, endpoint: 'GET /api/skills', count: db.skills.length, data: db.skills };
+      },
+      getInquiries() {
+        const db = this.readDB();
+        return { status: 200, endpoint: 'GET /api/inquiries', count: db.recruiter_inquiries.length, data: db.recruiter_inquiries };
+      },
+      postInquiry(payload) {
+        const db = this.readDB();
+        const nextId = db.recruiter_inquiries.length > 0 ? Math.max(...db.recruiter_inquiries.map(r => r.id)) + 1 : 101;
+        const newRecord = {
+          id: nextId,
+          company_name: payload.companyName.trim(),
+          role_track: payload.roleTrack.trim(),
+          wil_duration_months: 6,
+          location: payload.location.trim(),
+          recruiter_email: payload.recruiterEmail.trim(),
+          message: payload.message.trim(),
+          status: 'NEW_6MO_WIL_LEAD',
+          submitted_at: new Date().toISOString().replace('T', ' ').substring(0, 19)
+        };
+        db.recruiter_inquiries.unshift(newRecord);
+        this.writeDB(db);
+        return { status: 201, endpoint: 'POST /api/inquiries', data: newRecord };
+      },
+      deleteInquiry(id) {
+        const db = this.readDB();
+        db.recruiter_inquiries = db.recruiter_inquiries.filter(r => r.id !== id);
+        this.writeDB(db);
+        return { status: 200, deletedId: id };
+      }
+    };
+
+    function renderProjects(category = 'All') {
+      const { data } = BackendAPI.getProjects(category);
+      const grid = document.getElementById('projects-grid');
+      if (!grid) return;
+
+      grid.innerHTML = data.map(project => {
+        const badgeClass = project.category === 'Industrial Cybersecurity'
+          ? 'bg-amber-400/15 text-amber-300 border border-amber-400/30'
+          : project.category === 'Full-Stack Web'
+            ? 'bg-pactEmerald/15 text-pactEmerald border border-pactEmerald/30'
+            : 'bg-pactSky/15 text-pactCyan border border-pactCyan/30';
+
+        return `
+          <article
+            onclick="openCaseStudyModal(${project.id})"
+            class="group cursor-pointer pact-glass hover:bg-pactGlassHover rounded-3xl p-6 flex flex-col justify-between transition-all duration-200 shadow-pact-card hover:border-pactCyan/50"
+          >
+            <div class="space-y-4">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="px-2.5 py-1 rounded-lg font-mono text-[11px] font-semibold ${badgeClass}">
+                  ${project.category}
+                </span>
+                ${project.awardBadge ? `<span class="px-2.5 py-1 rounded-lg bg-pactVoid/70 border border-pactBorder text-pactText font-mono text-[11px]">${project.awardBadge}</span>` : ''}
+              </div>
+              <div>
+                <h3 class="font-display font-bold text-lg sm:text-xl text-white group-hover:text-pactCyan transition-colors leading-snug">
+                  ${project.title}
+                </h3>
+                <p class="text-xs font-mono text-pactMuted mt-1">${project.subtitle}</p>
+              </div>
+              <p class="text-sm text-pactMuted leading-relaxed">${project.summary}</p>
+            </div>
+
+            <div class="pt-5 mt-5 border-t border-pactBorder space-y-4">
+              <div class="flex flex-wrap gap-1.5">
+                ${project.stack.slice(0, 4).map(t => `<span class="px-2.5 py-1 rounded-lg bg-pactVoid/75 text-pactCyan font-mono text-[11px] border border-pactBorder/60">${t}</span>`).join('')}
+                ${project.stack.length > 4 ? `<span class="px-2 py-1 rounded-lg bg-pactVoid/75 text-pactMuted font-mono text-[11px]">+${project.stack.length - 4}</span>` : ''}
+              </div>
+              <div class="flex items-center justify-between text-xs font-mono font-semibold text-pactCyan">
+                <span>Inspect System Architecture</span>
+                <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderSkillsMatrix() {
+      const { data } = BackendAPI.getSkills();
+      const container = document.getElementById('skills-matrix');
+      if (!container) return;
+
+      container.innerHTML = data.map(group => `
+        <div class="pact-glass rounded-3xl p-6 sm:p-7 shadow-pact-card">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-xl bg-pactSky/20 border border-pactCyan/30 text-pactCyan flex items-center justify-center font-mono font-bold text-xs">
+              ${group.badge}
+            </div>
+            <h3 class="font-display font-bold text-lg text-white">${group.category}</h3>
+          </div>
+          <p class="text-xs sm:text-sm text-pactMuted mb-5 leading-relaxed">${group.description}</p>
+          <ul class="space-y-2.5">
+            ${group.items.map(item => `
+              <li class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-pactVoid/65 border border-pactBorder/60">
+                <span class="text-xs sm:text-sm font-medium text-white">${item.name}</span>
+                <span class="text-[11px] font-mono text-pactCyan bg-pactNavy px-2 py-0.5 rounded-md border border-pactBorder shrink-0">${item.level}</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      `).join('');
+    }
+
+    function updateInquiryBadge() {
+      const { count } = BackendAPI.getInquiries();
+      const badge = document.getElementById('nav-inquiry-badge');
+      if (badge) badge.textContent = count;
+    }
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.className = 'filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium pact-glass text-pactMuted hover:text-white transition-all';
+        });
+        btn.className = 'filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-gradient-to-r from-pactSky to-pactSapphire text-white transition-all shadow-pact-glow';
+        renderProjects(btn.getAttribute('data-filter'));
+      });
+    });
+
+    // Case study modal
+    function openCaseStudyModal(id) {
+      const { data } = BackendAPI.getProjects('All');
+      const p = data.find(item => item.id === id);
+      if (!p) return;
+
+      document.getElementById('modal-project-category').textContent = p.category;
+      const badge = document.getElementById('modal-project-badge');
+      if (p.awardBadge) {
+        badge.textContent = p.awardBadge;
+        badge.classList.remove('hidden');
+      } else {
+        badge.classList.add('hidden');
+      }
+      document.getElementById('modal-project-title').textContent = p.title;
+      document.getElementById('modal-project-subtitle').textContent = p.subtitle;
+      document.getElementById('modal-project-problem').textContent = p.problem;
+      document.getElementById('modal-project-architecture').textContent = p.architecture;
+      document.getElementById('modal-project-challenge').textContent = p.challenge;
+      document.getElementById('modal-project-outcome').textContent = p.outcome;
+      document.getElementById('modal-project-stack').innerHTML = p.stack.map(s => `<span class="px-3 py-1.5 rounded-xl bg-pactVoid/75 border border-pactBorder text-pactCyan font-mono text-xs">${s}</span>`).join('');
+      document.getElementById('modal-project-live').href = p.liveUrl;
+      document.getElementById('modal-project-github').href = p.githubUrl;
+
+      const modal = document.getElementById('case-study-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCaseStudyModal() {
+      const modal = document.getElementById('case-study-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    // CV & 6-Month WIL Letter Preview + Download
+    function getCvHtmlMarkup() {
+      return `
+        <div class="border-b-2 border-slate-900 pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">SAMUKELISIWE FELICITY PHIRI</h2>
+            <p class="text-sm font-semibold text-sky-700">National Diploma in Electrical Engineering (Light Current &amp; Embedded Systems)</p>
+            <p class="text-xs text-slate-600 mt-0.5">Tshwane University of Technology (TUT) &bull; Student No: 230572054 &bull; SAIEE Student Member</p>
+          </div>
+          <div class="text-xs text-slate-700 sm:text-right font-mono">
+            <p>Pretoria / Johannesburg, SA</p>
+            <p>Tel: 072 027 9961</p>
+            <p>samke.fphiri@gmail.com</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-sky-800 mb-1">6-Month Work-Integrated Learning (WIL) Objective</h3>
+          <p class="text-xs sm:text-sm text-slate-700">
+            Seeking a <strong>6-month Work-Integrated Learning (WIL)</strong> placement in Embedded Systems, Firmware Engineering, Industrial Automation/OT Security, or Full-Stack IoT Development. Completed S5 Design Project (DPE316D) and ready to contribute immediately to engineering teams and WIL logbook milestones.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-sky-800 mb-1">Technical Skills</h3>
+          <p class="text-xs sm:text-sm text-slate-700">
+            <strong>Embedded &amp; Hardware:</strong> C/C++, ATmega328P, ESP32 / ESP32-S3-Pico, MCP23017 (I2C), SN75176BP (RS485), DS1307 RTC, Proteus, Wokwi, Microchip Studio, PlatformIO.<br/>
+            <strong>Full-Stack &amp; Cloud:</strong> Node.js, Express, SQLite / better-sqlite3, JavaScript (ES6+), HTML5, CSS3, Git/GitHub, Vercel.<br/>
+            <strong>Engineering &amp; Design:</strong> MATLAB/Simulink, SolidWorks, Figma.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-sky-800 mb-1">Selected Engineering &amp; Full-Stack Projects</h3>
+          <ul class="text-xs sm:text-sm text-slate-700 list-disc list-inside space-y-1">
+            <li><strong>DPE316D Automated Water Tank &amp; Pump Controller:</strong> ATmega328P + MCP23017 I2C + ESP32-S3-Pico cloud telemetry dashboard.</li>
+            <li><strong>Inkanini RS485 Firewall (1st Place — HackSecure 2026):</strong> ESP32 industrial OT bus monitor &amp; hardware watchdog relay isolation.</li>
+            <li><strong>MKHAYA Smart POS (1st Place &amp; Incubated):</strong> Pocket Arduino Uno POS hardware &amp; full-stack business analytics platform.</li>
+            <li><strong>GeekArchieve &amp; Aegis:</strong> Full-stack Node.js, Express &amp; SQLite / better-sqlite3 web applications deployed on Vercel.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-sky-800 mb-1">Honours, Certifications &amp; Leadership</h3>
+          <p class="text-xs sm:text-sm text-slate-700">
+            1st Place — HackSecure 2026 &bull; 1st Place — GirlCode Johannesburg Hackathon (Imbewu Learn) &bull; Top 10 Finalist — TCS Sustainathon SA (Hlokomela AI) &bull; Huawei ICT Academy Campus Ambassador (TUT) &bull; Microsoft Azure AI Fundamentals (AI-900) &bull; SANCS26 Cyber Security School &bull; ALX Professional Foundations.
+          </p>
+        </div>
+      `;
+    }
+
+    function getWilLetterHtmlMarkup() {
+      return `
+        <div class="border-b border-slate-300 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wider text-sky-800">Tshwane University of Technology (TUT)</p>
+            <h2 class="text-xl font-extrabold text-slate-900">Department of Electrical Engineering (DEE)</h2>
+            <p class="text-xs text-slate-600">6-Month Work-Integrated Learning (WIL) Placement Confirmation</p>
+          </div>
+          <div class="text-xs font-mono text-slate-600 sm:text-right">
+            <p>Student No: <strong>230572054</strong></p>
+            <p>Required Duration: <strong>6 Months</strong></p>
+          </div>
+        </div>
+
+        <p class="text-xs sm:text-sm text-slate-700"><strong>To:</strong> Prospective Host Employer / Engineering &amp; Human Resources Department</p>
+        <p class="text-xs sm:text-sm text-slate-700"><strong>Subject:</strong> Confirmation of <strong>6-Month Work-Integrated Learning (WIL)</strong> Placement Requirement — <strong>Samukelisiwe Felicity Phiri</strong> (Student No: <strong>230572054</strong>)</p>
+
+        <p class="text-xs sm:text-sm text-slate-700">
+          This Work-Integrated Learning (WIL) placement letter confirms that <strong>Samukelisiwe Felicity Phiri</strong> (Student No: <strong>230572054</strong>) is a registered student in the <strong>National Diploma in Electrical Engineering (Light Current &amp; Embedded Systems)</strong> at <strong>Tshwane University of Technology (TUT)</strong> and requires a <strong>6-month (24-week) Work-Integrated Learning placement</strong> under the supervision of a qualified engineering mentor/technologist.
+        </p>
+
+        <p class="text-xs sm:text-sm text-slate-700">
+          During the <strong>6-month WIL period</strong>, the student will complete structured workplace tasks aligned with the TUT Electrical Engineering WIL logbook, including hardware/circuit testing, embedded firmware/control or instrumentation support, technical documentation, and safe engineering practice.
+        </p>
+
+        <div class="bg-slate-100 rounded-xl p-4 text-xs text-slate-800 space-y-1">
+          <p><strong>Candidate Name:</strong> Samukelisiwe Felicity Phiri</p>
+          <p><strong>Student Number:</strong> 230572054</p>
+          <p><strong>Required WIL Duration:</strong> 6 Months</p>
+          <p><strong>Telephone:</strong> 072 027 9961 &bull; <strong>Email:</strong> samke.fphiri@gmail.com</p>
+        </div>
+
+        <p class="text-xs text-slate-600 italic">
+          Note: Host employers may use the Recruiter Portal on this portfolio or contact Samukelisiwe directly at 072 027 9961 / samke.fphiri@gmail.com to coordinate 6-month WIL placement onboarding and TUT logbook sign-off.
+        </p>
+      `;
+    }
+
+    function openDocumentModal(tab = 'cv') {
+      const modal = document.getElementById('document-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      switchDocumentTab(tab);
+    }
+
+    function closeDocumentModal() {
+      const modal = document.getElementById('document-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function switchDocumentTab(tab) {
+      activeDocTab = tab;
+      const cvBtn = document.getElementById('doc-tab-cv');
+      const wilBtn = document.getElementById('doc-tab-wil');
+      const sheet = document.getElementById('document-preview-sheet');
+
+      if (tab === 'cv') {
+        cvBtn.className = 'px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-pactSky to-pactSapphire text-white';
+        wilBtn.className = 'px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium pact-glass text-pactMuted hover:text-white';
+        sheet.innerHTML = getCvHtmlMarkup();
+      } else {
+        wilBtn.className = 'px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold bg-pactEmerald text-slate-950';
+        cvBtn.className = 'px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium pact-glass text-pactMuted hover:text-white';
+        sheet.innerHTML = getWilLetterHtmlMarkup();
+      }
+    }
+
+    function downloadDocumentFile(type) {
+      const isCv = type === 'cv';
+      const title = isCv
+        ? 'Samukelisiwe_Felicity_Phiri_CV_6Mo_WIL'
+        : 'Samukelisiwe_Phiri_TUT_6Month_WIL_Letter_230572054';
+      const bodyContent = isCv ? getCvHtmlMarkup() : getWilLetterHtmlMarkup();
+
+      const standaloneHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${title}</title>
+  <script src="https://cdn.tailwindcss.com"><\/script>
+  <style>
+    @media print {
+      .no-print { display: none; }
+      body { background: #ffffff !important; padding: 0 !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-100 p-6 sm:p-10">
+  <div class="max-w-3xl mx-auto">
+    <div class="no-print mb-4 flex items-center justify-between bg-slate-900 text-white px-4 py-3 rounded-xl text-xs">
+      <span>${title}</span>
+      <button onclick="window.print()" class="px-3 py-1.5 rounded-lg bg-sky-500 text-white font-semibold">Save as PDF / Print</button>
+    </div>
+    <div class="bg-white text-slate-900 rounded-2xl p-8 shadow space-y-5 text-sm leading-relaxed">
+      ${bodyContent}
+    </div>
+  </div>
+</body>
+</html>`;
+
+      const blob = new Blob([standaloneHtml], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${title}.html`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast(`Downloaded ${title}.html (open in browser to Print / Save as PDF).`, 'success');
+    }
+
+    // API & SQLite Inspector modal
+    function openApiInspector(defaultTab = 'endpoints') {
+      const modal = document.getElementById('api-inspector-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+      switchInspectorTab(defaultTab);
+      testRestEndpoint('GET', '/api/projects');
+      renderSqliteInquiriesTable();
+    }
+
+    function closeApiInspector() {
+      const modal = document.getElementById('api-inspector-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function switchInspectorTab(tabName) {
+      ['endpoints', 'inquiries', 'schema'].forEach(name => {
+        const panel = document.getElementById(`inspector-tab-${name}`);
+        const btn = document.getElementById(`tab-btn-${name}`);
+        if (name === tabName) {
+          panel.classList.remove('hidden');
+          btn.className = 'inspector-tab-btn px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-pactSky to-pactSapphire text-white';
+        } else {
+          panel.classList.add('hidden');
+          btn.className = 'inspector-tab-btn px-4 py-2 rounded-xl text-xs font-mono font-medium pact-glass text-pactMuted hover:text-white';
+        }
+      });
+      if (tabName === 'inquiries') renderSqliteInquiriesTable();
+    }
+
+    function testRestEndpoint(method, route) {
+      const start = performance.now();
+      let payload;
+      if (route === '/api/projects') payload = BackendAPI.getProjects('All');
+      else if (route === '/api/skills') payload = BackendAPI.getSkills();
+      else payload = BackendAPI.getInquiries();
+      const elapsed = (performance.now() - start).toFixed(2);
+
+      document.getElementById('api-response-meta').textContent = `HTTP/1.1 ${payload.status} OK • ${method} ${route} • ${elapsed}ms`;
+      document.getElementById('api-response-output').textContent = JSON.stringify(payload, null, 2);
+    }
+
+    function renderSqliteInquiriesTable() {
+      const { data } = BackendAPI.getInquiries();
+      const container = document.getElementById('sqlite-inquiries-list');
+      if (!container) return;
+
+      if (data.length === 0) {
+        container.innerHTML = `<p class="text-xs font-mono text-pactMuted p-4 rounded-xl pact-glass">0 rows in recruiter_inquiries.</p>`;
+        return;
+      }
+
+      container.innerHTML = data.map(row => `
+        <div class="p-4 rounded-2xl pact-glass flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="space-y-1">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-mono text-xs font-bold text-pactCyan">ROW #${row.id}</span>
+              <span class="font-display font-bold text-sm text-white">${escapeHtml(row.company_name)}</span>
+              <span class="px-2 py-0.5 rounded bg-pactEmerald/15 text-pactEmerald font-mono text-[11px]">${escapeHtml(row.role_track)}</span>
+            </div>
+            <p class="text-xs text-pactMuted">
+              Location: <strong class="text-white">${escapeHtml(row.location)}</strong> &bull;
+              Contact: <strong class="text-white">${escapeHtml(row.recruiter_email)}</strong> &bull;
+              <span class="font-mono">${row.submitted_at}</span>
+            </p>
+            <p class="text-xs text-pactText pt-1">"${escapeHtml(row.message)}"</p>
+          </div>
+          <button onclick="handleDeleteInquiry(${row.id})" class="self-start sm:self-center px-3 py-1.5 rounded-xl bg-rose-950/70 hover:bg-rose-900 border border-rose-500/30 text-xs font-mono text-rose-200">
+            DELETE
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function handleDeleteInquiry(id) {
+      BackendAPI.deleteInquiry(id);
+      renderSqliteInquiriesTable();
+      updateInquiryBadge();
+      showToast(`Deleted row #${id} from recruiter_inquiries.`, 'info');
+    }
+
+    function seedSampleInquiry() {
+      BackendAPI.postInquiry({
+        companyName: 'Pretoria Embedded & Control Systems',
+        roleTrack: 'Embedded Systems & Firmware (6-Month WIL)',
+        location: 'Pretoria, Gauteng',
+        recruiterEmail: 'wil@controlsystems.co.za',
+        message: 'Interested in interviewing Samukelisiwe for a 6-month WIL placement.'
+      });
+      renderSqliteInquiriesTable();
+      updateInquiryBadge();
+      showToast('Inserted sample 6-month WIL inquiry (HTTP 201).', 'success');
+    }
+
+    function copyApiOutput() {
+      const text = document.getElementById('api-response-output').textContent;
+      const temp = document.createElement('textarea');
+      temp.value = text;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand('copy');
+      document.body.removeChild(temp);
+      showToast('JSON response copied to clipboard.', 'success');
+    }
+
+    // Form submit
+    document.getElementById('wil-inquiry-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const errorBox = document.getElementById('form-error-box');
+      errorBox.classList.add('hidden');
+
+      const companyName = document.getElementById('companyName').value.trim();
+      const roleTrack = document.getElementById('roleTrack').value;
+      const location = document.getElementById('location').value.trim();
+      const recruiterEmail = document.getElementById('recruiterEmail').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!companyName || !location || !recruiterEmail || !message) {
+        errorBox.textContent = 'Please complete all required fields before submitting.';
+        errorBox.classList.remove('hidden');
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recruiterEmail)) {
+        errorBox.textContent = 'Please enter a valid recruiter email address.';
+        errorBox.classList.remove('hidden');
+        return;
+      }
+
+      const res = BackendAPI.postInquiry({ companyName, roleTrack, location, recruiterEmail, message });
+      this.reset();
+      updateInquiryBadge();
+      showToast(`HTTP ${res.status}: 6-Month WIL inquiry for ${companyName} stored in SQLite (Row #${res.data.id}).`, 'success');
+    });
+
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      const accent = type === 'success' ? 'border-pactEmerald' : 'border-pactCyan';
+      toast.className = `pointer-events-auto mb-3 p-4 rounded-2xl pact-glass-strong border-l-4 ${accent} text-white text-xs sm:text-sm font-medium flex items-start justify-between gap-3 shadow-pact-card`;
+      toast.innerHTML = `<span>${escapeHtml(message)}</span><button onclick="this.parentElement.remove()" class="text-pactMuted hover:text-white font-bold">&times;</button>`;
+      container.appendChild(toast);
+      setTimeout(() => { if (toast.parentElement) toast.remove(); }, 5000);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeCaseStudyModal();
+        closeDocumentModal();
+        closeApiInspector();
+      }
+    });
+
+    ['case-study-modal', 'document-modal', 'api-inspector-modal'].forEach(id => {
+      document.getElementById(id).addEventListener('click', function (e) {
+        if (e.target === this) {
+          this.classList.add('hidden');
+          this.classList.remove('flex');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      BackendAPI.init();
+      renderProjects('All');
+      renderSkillsMatrix();
+      updateInquiryBadge();
+    });
+  </script>
+</body>
+</html>
